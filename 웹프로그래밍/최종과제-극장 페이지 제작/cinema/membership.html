@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>회원가입</title>
+        <link type="text/css" rel="stylesheet" href="membership.css">
+    </head>
+    <body>
+        <section>
+            <p id="m_title"><a href="cinema_main.html">C I N E M A</a></p>
+            <form class="member">
+                <fieldset class="member_form">
+                    <legend>회원가입</legend>
+                    &nbsp;&nbsp;이름&nbsp;<input id="name" type="text"><br>
+                    &nbsp;&nbsp;아이디&nbsp;<input id="id" type="text"><br>
+                    &nbsp;&nbsp;비밀번호&nbsp;<input id="pass" type="password">
+                    <button id="confirm_btn" type="button" disabled="disabled">확인</button><br>
+                    <p id="confirm_pass">비밀번호 확인&nbsp;<input id="pass_input" type="password"></p>
+                    <button id="ok" type="button" disabled="disabled">OK</button><br>
+                    <button id="submit" type="submit" disabled="disabled">가입</button>
+                </fieldset>
+            </form>
+        </section>
+        <script>
+            var confirm_btn = document.getElementById("confirm_btn");
+            var confirm_pass = document.getElementById("confirm_pass");
+            var ok_btn = document.getElementById("ok");
+            var name = document.getElementById("name");
+            var id = document.getElementById("id");
+            var password = document.getElementById("pass");
+            var re_password = document.getElementById("pass_input")
+            var submit_btn = document.getElementById("submit");
+
+            confirm_pass.style.visibility = "hidden";
+            ok_btn.style.visibility = "hidden";
+
+            confirm_btn.addEventListener('click', function()
+            {
+                confirm_pass.style.visibility = "visible";
+                ok_btn.style.visibility = "visible";
+            })
+
+            ok_btn.addEventListener('click', function()
+            {
+                if(password.value == re_password.value)
+                {
+                    ok_btn.style.background = "green";
+                    if(id.value != "" && name.value != "")
+                    {
+                        submit_btn.disabled=false;
+                    }
+                }
+            })
+ 
+            password.addEventListener('click', function()
+            {
+                confirm_btn.disabled=false;
+            })
+            re_password.addEventListener('click', function()
+            {
+                ok_btn.disabled=false;
+            })
+
+        </script>
+    </body>
+</html>

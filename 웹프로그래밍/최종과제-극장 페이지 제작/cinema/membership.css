@@ -1,0 +1,80 @@
+a{text-decoration: none; color: inherit;}
+
+#m_title{
+    position: absolute;
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+    margin-left: 750px;
+    padding: 110px 0px 50px 10px;
+    text-align: center;
+}
+
+.member{
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 730px;
+}
+.member_form{
+    width: 500px;
+    height: 250px;
+}
+
+legend{
+    text-align: center;
+    font: bold;
+    font-size: larger;
+}
+
+#name{
+    width: 70px;
+    margin: 10px 0px 10px 65px;
+
+}
+#name:hover{
+    background-color: azure;
+}
+
+#id{
+    margin: 10px 0px 10px 50px;
+}
+
+#pass{
+    margin: 10px 0px 10px 35px;
+}
+
+#id, #pass{
+    width: 130px;
+}
+
+#id:hover, #pass:hover{
+    background-color: azure;
+}
+
+#confirm_btn{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 7px;
+}
+#pass_input{
+    width: 130px;
+}
+#confirm_pass{
+    display: inline-block;
+}
+
+#ok{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 18px;
+}
+#submit{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 450px;
+}
+
+.member_form > button{
+    background-color: #fff;
+    border: 0px;
+}

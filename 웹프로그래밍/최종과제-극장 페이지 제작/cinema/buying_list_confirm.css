@@ -1,0 +1,53 @@
+ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{text-decoration: none; color: inherit;}
+
+#m_title{
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    padding: 110px 0px 50px 10px;
+    text-align: center;
+}
+#buy_list{
+    font-size: 35px;
+    margin-top: 50px;
+    text-align: center;
+}
+.line7{
+    border: 1px solid black;
+    width: 700px;
+    transform: translate(600px, 20px);
+}
+#sb{
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 15px;
+    transform: translate(700px, -10px);
+}
+
+#UL{
+    font-size: 30px;
+    transform: translate(750px, 30px);
+}
+#UL > li{
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+}
+li > button{
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 15px;
+    transform: translate(100px, -45px);
+}
+#UL > li > span{
+    display: inline-block;
+    font-size: 15px;
+    transform: translateX(40px);
+    text-align: center;
+}

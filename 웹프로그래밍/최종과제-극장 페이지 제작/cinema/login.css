@@ -1,0 +1,104 @@
+a{text-decoration: none; color: inherit;}
+
+#m_title{
+    position: absolute;
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+    margin-left: 750px;
+    padding: 110px 0px 50px 10px;
+    text-align: center;
+}
+
+.login{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 370px;
+}
+
+.login > p{
+    display: inline-block;
+    position: absolute;
+}
+.login > button{
+    position: absolute;
+    text-align: center;
+}
+.id{
+    margin-left: 550px;
+}
+
+.pw{
+    margin-left: 550px;
+    margin-top: 60px;
+}
+p > input[type=text]{
+    width: 120px;
+}
+
+p > input[type=text]:hover{
+    background-color: azure;
+}
+
+p > input[type=password]{
+    width: 120px;
+}
+
+p > input[type=password]:hover{
+    background-color: azure;
+}
+
+button[type=submit]
+{
+    height: 30px;
+    margin-left:700px;
+    margin-top: 50px;
+    font-size: large;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    border: 0px;
+    outline: none;
+}
+.btn-login:hover{
+    color:slategrey;
+}
+
+.id_f{
+    margin-left: 470px;
+    margin-top: 90px;
+    width: 90px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 0px;
+}
+.id_f:hover{
+    color:slategrey;
+}
+
+.pw_f{
+    margin-left: 570px;
+    margin-top: 90px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.pw_f:hover{
+    color:slategrey;
+}
+
+.mem{
+    margin-left: 700px;
+    margin-top: 90px;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.mem:hover{
+    color:slategrey;
+}
+

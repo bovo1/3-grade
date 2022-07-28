@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C I N E M A</title>
+        <link type="text/css" rel="stylesheet" href="ticketing.css">
+    </head>
+    <body>
+        <section>
+            <p id="m_title"><a href="cinema_main.html">C I N E M A</a></p>
+        </section>
+        <!--<p id="bg_c">.</p> -->
+        <section>
+            <form id="ticket_form">
+                <fieldset id="ticket_form_set">
+                    <a href="buying_list_confirm.html"><button id ='page' type="button">예매 내역</button></a>
+                    <button id="form_reset_btn" type="button" onclick="window.location.reload()">다시 예매</button>
+                    <span id="film_title">영화</span>
+                    <span id="film_info_t">상세정보</span>
+                    <span id="film_time_t">시간표</span>
+                    <div class="film_ticket">           
+                        <ul class="film_list submenu">
+                            <li><button id="bt1" onclick="cl('.film_info_1', 'bt1', 'f1_bt1', 'f1_bt2')" type="button">이터널스</button></li>
+                            <li><button id="bt2" onclick="cl('.film_info_2', 'bt2', 'f2_bt1', 'f2_bt2')" type="button">듄</button></li>
+                            <li><button id="bt3" onclick="cl('.film_info_3', 'bt3', 'f3_bt1', 'f3_bt2')" type="button">강릉</button></li>
+                            <li><button id="bt4" onclick="cl('.film_info_4', 'bt4', 'f4_bt1', 'none')" type="button">아담스 패밀리 2</button></li>
+                            <li><button id="bt5" onclick="cl('.film_info_5', 'bt5', 'f5_bt1', 'f5_bt2')" type="button">왕십리 김종분</button></li>
+                            <li><button id="bt6" onclick="cl('.film_info_6', 'bt6', 'f6_bt1', 'f6_bt2')" type="button">틱, 틱 붐!</button></li>
+                            <li><button id="bt7" onclick="cl('.film_info_7', 'bt7', 'f7_bt1', 'none')"type="button">베놈 2</button></li>
+                        </ul>
+                    </div>
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    
+                    <div class="film_info_1">
+                        <img id="info_img1" src="https://movie-phinf.pstatic.net/20211026_97/1635213484861yCnwO_JPEG/movie_image.jpg" width="200" height="300">
+                        <span id="p1_title">이터널스</span><br>
+                        <p id="a1">          
+                            기      본 : 미국 | 155 분 | 액션,어드벤처,드라마<br>
+                            개 봉 일 : 21.11.03<br>
+                            감      독 : 클로이 자오<br>
+                            배      우 : 안젤리나 졸리(테나), 마동석(길가메시), 리차드 매든(이카리스)<br>
+                            등      급 : 12세이상관람가<br><br>
+
+                            <span id="p1_context">줄거리</span><br><br>
+                            마블 스튜디오의 이터널스는 수 천년에 걸쳐 그 모습을<br>
+                            드러내지 않고 살아온 불멸의 히어로들이<br>
+                            어벤져스: 엔드게임 이후 인류의 가장 오래된 적<br>
+                            '데비안츠'에 맞서기 위해 다시 힘을 합치면서 벌어지는 이야기
+                        </p>
+                    </div>
+                    <div class="film_info_2">
+                        <img id="info_img2" src="https://movie-phinf.pstatic.net/20210915_104/1631681279096sdjNA_JPEG/movie_image.jpg" width="200" height="300">
+                        <span id="p2_title">듄</span><br>
+                        <p>          
+                            기      본 : 미국 | 155 분 | SF<br>
+                            개 봉 일 : 21.10.20<br>
+                            감      독 : 드니 빌뇌브<br>
+                            배      우 : 티모시 샬라메(폴 아트레이드), 레베카 퍼거슨(레이디 제시카 아트레이드), 오스카 아이삭(레토 아트레이드)<br>
+                            등      급 : 12세이상관람가<br>
+
+                            <span id="p2_context">줄거리</span><br><br>
+                            “듄을 지배하는 자가 우주를 지배한다!”<br>
+                            10191년, 아트레이데스 가문의 후계자인 폴(티모시 샬라메)은 시공을 초월한 존재이자<br>
+                            전 우주를 구원할 예지된 자의 운명을 타고났다.<br>
+                            그리고 어떤 계시처럼 매일 꿈에서 아라키스 행성에 있는 한 여인을 만난다.<br>
+                            모래언덕을 뜻하는 '듄'이라 불리는 아라키스는 물 한 방울 없는 사막이지만<br>
+                            우주에서 가장 비싼 물질인 신성한 환각제 스파이스의 유일한 생산지로 이를 차지하기 위한 전쟁이 치열하다.<br>
+                            황제의 명령으로 폴과 아트레이데스 가문은 죽음이 기다리는 아라키스로 향하는데…<br><br>
+ 
+                            위대한 자는 부름에 응답한다, 두려움에 맞서라, 이것은 위대한 시작이다!
+                        </p>
+                    </div>
+                    <div class="film_info_3">
+                        <img id="info_img3" src="https://movie-phinf.pstatic.net/20211108_295/1636363035383sHbbs_JPEG/movie_image.jpg" width="200" height="300">
+                        <span id="p3_title">강릉</span><br>
+                        <p>          
+                            기      본 : 한국 | 119 분 | 범죄,액션<br>
+                            개 봉 일 : 21.11.10<br>
+                            감      독 : 윤영빈<br>
+                            배      우 : 유오성(김길석), 장혁(이민석), 박성근(조방현)<br>
+                            등      급 : 청소년관람불가<br>
+
+                            <span id="p3_context">줄거리</span><br><br>
+                            강릉 최대 조직의 ‘길석’<br>
+                            평화와 의리를 중요시하며 질서 있게 살아가던 그의 앞에<br>
+                            강릉 최대 리조트 소유권을 노린 남자 ‘민석’이 나타난다<br><br>
+                            
+                            첫 만남부터 서늘한 분위기가 감도는 둘,<br>
+                            ‘민석’이 자신의 목표를 위해 본격적으로 움직이기 시작하면서<br>
+                            두 조직 사이에는 겉잡을 수 없는 전쟁이 시작되는데..<br><br>
+                            
+                            거친 운명 앞에 놓인 두 남자<br>
+                            그들의 이야기가 시작된다<br>
+                        </p>
+                    </div>
+
+                    <div class="film_info_4">
+                        <img id="info_img4" src="https://movie-phinf.pstatic.net/20211110_170/1636522953153AbQfv_JPEG/movie_image.jpg" width="200" height="300">
+                        <span id="p4_title">아담스 패밀리 2</span><br>
+                        <p>          
+                            기      본 : 미국 | 92 분 | 애니메이션,코미디,가족<br>
+                            개 봉 일 : 21.11.10<br>
+                            감      독 : 그렉 티어난, 콘래드 버논<br>
+                            배      우 : 오스카 아이삭(고메즈), 샤를리즈 테론(모티시아), 클로이 모레츠(웬즈데이)<br>
+                            등      급 : 전체관람가<br>
+
+                            <span id="p4_context">줄거리</span><br><br>
+                            “평화로운 일상은 못 참지~”<br>
+                            호러블리 사춘기 아이들과 떠나는 위험천진난만 패밀리 어드벤처!<br>
+                            평범함과는 거리가 먼 호러블리 아담스 패밀리에게 닥친 최대 위기.<br>
+                            아이들은 사춘기에 접어들고, 권태로운 가족 분위기에 위기를 느낀<br>
+                            아빠 ‘고메즈’와 엄마 ‘모티시아’는 가족들의 화합을 위해<br>
+                            나이아가라 폭포에서 그랜드 캐니언까지 미국을 가로지르는 가족 여행을 떠난다.<br>
+                            하지만, 어쩐지 태생부터 남달랐던 ‘웬즈데이’의 놀라운 비밀이 밝혀지면서<br>
+                            ‘웬즈데이’의 사춘기는 절정에 이르고,<br>
+                            아담스 패밀리의 여행은 점점 더 신나고, 점점 더 절망적인 상황으로 치닫는데…<br>
+                        </p>
+                    </div>
+
+                    <div class="film_info_5">
+                        <img id="info_img5" src="https://movie-phinf.pstatic.net/20211026_135/16352352904529aeAA_JPEG/movie_image.jpg" width="200" height="300">
+                        <span id="p5_title">왕십리 김종분</span><br>
+                        <p>          
+                            기      본 : 한국 | 102 분 | 다큐멘터리<br>
+                            개 봉 일 : 21.11.11<br>
+                            감      독 : 김진열<br>
+                            배      우 : 김종분, 김귀임, 김종수<br>
+                            등      급 : 12세이상관람가<br><br>
+
+                            <span id="p5_context">줄거리</span><br><br>
+                            50년 넘게 노점을 해온 팔순의 김종분.<br>
+                            왕십리역 11번 출구 터줏대감이자 현역이다.<br><br>
+                            
+                            자식 먹이고 입히고 공부시키려고 시작한 일인데,<br>
+                            자식 거둘 일 없어진 지금도 그곳을 지키고 있다.<br>
+                            30년 전 길 위에서 딸을 잃었지만, 더 많은 자식들을 얻었다.<br><br>
+                            
+                            종분 씨는 딸 잃은 길 위에서<br>
+                            옥수수를 삶고, 가래떡을 굽고, 깻잎을 갠다.<br>
+                            오늘을 산다.
+                        </p>
+                    </div>
+
+                    <div class="film_info_6">
+                        <img id="info_img6" src="https://movie-phinf.pstatic.net/20211026_6/1635216174700A9jxe_JPEG/movie_image.jpg" width="200" height="300">
+                        <span id="p6_title">틱, 틱 붐!</span><br>
+                        <p>          
+                            기      본 : 미국 | 120 분 | 뮤지컬,드라마<br>
+                            개 봉 일 : 21.11.12<br>
+                            감      독 : 린-마누엘 미란다<br>
+                            배      우 : 앤드류 가필드, 알렉산드라 쉽, 로빈 드 지저스<br>
+                            등      급 : 12세이상관람가<br><br>
+
+                            <span id="p6_context">줄거리</span><br><br>
+                            1990년 뉴욕, 식당에서 웨이터로 일하는 존(앤드루 가필드)은<br>
+                            뮤지컬의 전설로 남을 작품을 쓰겠다는 꿈을 이루기 위해 작곡에 매진한다.<br>
+                            그런데 인생의 중요한 기회가 될 수도 있는 공연을 며칠 앞두고 많은 일들이 갑작스레 몰려온다.<br>
+                            뉴욕이 아닌 곳에서 아티스트의 삶을 꿈꾸는 여자 친구 수전(알렉산드라 십),<br>
+                            꿈을 접고 경제적으로 안정된 삶을 선택한 친구 마이클(로빈 데 헤수스),<br>
+                            예술계를 뒤흔든 사회적 이슈 등이 그를 전방위로 압박한다.<br>
+                            서른 살 생일은 다가오고, 존은 예술가로서의 삶이 불안해지기 시작하는데..<br>
+                        </p>
+                    </div>
+                    <div class="film_info_7">
+                        <img id="info_img7" src="https://movie-phinf.pstatic.net/20210929_275/1632903680953494p8_JPEG/movie_image.jpg" width="200" height="300">
+                        <span id="p7_title">베놈 2</span><br>
+                        <p>          
+                            기      본 : 미국 | 97 분 | 액션,SF,스릴러<br>
+                            개 봉 일 : 21.10.13<br>
+                            감      독 : 앤디 서키스<br>
+                            배      우 : 톰 하디(에디 브록 / 베놈), 미셸 윌리엄스(앤 웨잉)<br>
+                            등      급 : 15세이상관람가<br><br>
+
+                            <span id="p7_context">줄거리</span><br><br>
+                            히어로의 시대는 끝났다<br>
+                            ‘베놈’과 완벽한 파트너가 된 ‘에디 브록’(톰 하디) 앞에<br>
+                            ‘클리터스 캐서디’(우디 해럴슨)가 ‘카니지’로 등장,<br>
+                            앞으로 닥칠 대혼돈의 세상을 예고한다.<br>
+                            대혼돈의 시대가 시작되고,<br>
+                            악을 악으로 처단할 것인가?<br>
+                        </p>
+                    </div>
+                    <div class="line3"></div>
+                    <div class="time_table">
+                        <ul>
+                            <li><button id="f1_bt1" onclick="cl_bt('f1_bt1')" type="button">10 : 40</button><button id="f1_bt2" onclick="cl_bt('f1_bt2')" type="button">15 : 20</button></li>
+                            <li><button id="f2_bt1" onclick="cl_bt('f2_bt1')" type="button">&nbsp;&nbsp;9 : 30</button><button id="f2_bt2" onclick="cl_bt('f2_bt2')" type="button">17 : 15</button></li>
+                            <li><button id="f3_bt1" onclick="cl_bt('f3_bt1')"  type="button">13 : 20</button><button id="f3_bt2" onclick="cl_bt('f3_bt2')"  type="button">15 : 05</button></li>
+                            <li><button id="f4_bt1" onclick="cl_bt('f4_bt1')"  type="button">16 : 30</button></li>
+                            <li><button id="f5_bt1" onclick="cl_bt('f5_bt1')" type="button">10 : 15</button><button id="f5_bt2" onclick="cl_bt('f5_bt2')"  type="button">18 : 20</button></li>
+                            <li><button id="f6_bt1" onclick="cl_bt('f6_bt1')" type="button">17 : 40</button><button id="f6_bt2" onclick="cl_bt('f6_bt2')"  type="button">20 : 20</button></li>
+                            <li><button id="f7_bt1" onclick="cl_bt('f7_bt1')" type="button">12 : 00</button></li>
+                        </ul>
+                    </div>
+                    <div class="line4"></div>
+                    <div class = "table_seat">
+                        <span id="좌석">좌석 선택</span>
+                        <div class="line5"></div>
+                        <table border="1" class="table_time">
+                            <tr><th>A</th><td onclick="table_bt(1, 1, 'A', '1')">1</td><td onclick="table_bt(1, 2, 'A', '2')">2</td><td onclick="table_bt(1, 3, 'A', '3')">3</td><td onclick="table_bt(1, 4, 'A', '4')">4</td><td onclick="table_bt(1, 5, 'A', '5')">5</td></tr>
+                            <tr><th>B</th><td onclick="table_bt(2, 1, 'B', '1')">1</td><td onclick="table_bt(2, 2, 'B', '2')">2</td><td onclick="table_bt(2, 3, 'B', '3')">3</td><td onclick="table_bt(2, 4, 'B', '4')">4</td><td onclick="table_bt(2, 5, 'B', '5')">5</td></tr>
+                            <tr><th>C</th><td onclick="table_bt(3, 1, 'C', '1')">1</td><td onclick="table_bt(3, 2, 'C', '2')">2</td><td onclick="table_bt(3, 3, 'C', '3')">3</td><td onclick="table_bt(3, 4, 'C','4')">4</td><td onclick="table_bt(3, 5, 'C','5')">5</td></tr>
+                            <tr><th>D</th><td onclick="table_bt(4, 1, 'D', '1')">1</td><td onclick="table_bt(4, 2, 'D', '2')">2</td><td onclick="table_bt(4, 3, 'D', '3')">3</td><td onclick="table_bt(4, 4, 'D', '4')">4</td><td onclick="table_bt(4, 5, 'D', '5')">5</td></tr>
+                            <tr><th>E</th><td onclick="table_bt(5, 1, 'E', '1')">1</td><td onclick="table_bt(5, 2, 'E', '2')">2</td><td onclick="table_bt(5, 3, 'E', '3')">3</td><td onclick="table_bt(5, 4, 'E', '4')">4</td><td onclick="table_bt(5, 5, 'E', '5')">5</td></tr>
+                        </table>
+                    </div>
+                    <button id="submit_bt" type="button">다음</button>
+                    <div class="buy">
+                        <span id="결제">결제</span>
+                        <div class="line6"></div>
+                        <p id="money_">
+                            결제하실 금액은 <span id="money">0</span> 원입니다.
+                        </p>
+                    </div>
+                    <button id="sub" type="submit">완료</button>
+                    <p id="another">다른 영화를 예매하시려면 새로고침을 눌러주세요.</p>
+                </fieldset>
+            </form>
+        </section>
+        <script src="ticketing.js"></script>
+    </body>
+</html>

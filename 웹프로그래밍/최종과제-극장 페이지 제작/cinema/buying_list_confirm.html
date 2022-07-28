@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>예매 내역</title>
+        <link type="text/css" rel="stylesheet" href="buying_list_confirm.css">
+    </head>
+    <body>
+        <p id="m_title"><a href="cinema_main.html">C I N E M A</a></p>
+        <hr>
+        <section>
+            <div id='buy_list'>예매 내역</div>
+            <input id='sb' type="button"  value="보기">
+            <div class="line7"></div>
+            <div>
+                <ul id="UL"></ul>
+            </div>
+        </section>
+
+        <script>
+            var ls = localStorage;
+            var listA = [];
+            var listB = [];
+            var show_btn = document.getElementById('sb');
+            storage();
+            addList();
+
+            function storage()
+            {
+                for(var i =0; i<ls.length; i++)
+                {
+                    listA.push(ls.key(i));
+                    listB.push(ls.getItem(listA[i]));
+                }
+            }   
+
+            function addList()
+            {
+                show_btn.style.display = 'none';
+                for(var i =0; i<listA.length; i++)
+                {
+                    var target = document.getElementById('UL');
+                    var li = document.createElement('li');
+                    var btn = document.createElement('button');
+                    var space =document.createElement("br");
+                    var span = document.createElement('span');
+                    var text = document.createTextNode(listA[i]);
+                    var time = document.createTextNode('예매 시간, 티켓비: ');
+                    var text2 = document.createTextNode('\n'+listB[i]);
+                    var btn_text = document.createTextNode('예매 취소');
+                    li.appendChild(text);
+                    span.appendChild(space);
+                    span.appendChild(time);
+                    span.appendChild(text2);
+                    btn.appendChild(btn_text);
+                    target.appendChild(li);
+                    li.appendChild(span);
+                    li.appendChild(btn);
+                }
+            }
+            var f_list = document.getElementsByTagName('li');
+            var b_list = document.getElementsByTagName('button');
+            var btn_list = [];
+
+            for(const btns of b_list){
+                btns.addEventListener('click', function()
+                {
+                    var str2 = btns.parentElement.innerText;
+                    btns.parentElement.style.display = 'none';
+                    str2.toString();
+                    for(var j in str2)
+                    {
+                        if(str2[j] == "\n")
+                        {
+                            str2 = str2.substring(0,j);
+                            break;
+                        }
+                    }
+                    ls.removeItem(str2);
+                });
+            }
+            
+        </script>
+    </body>
+</html>

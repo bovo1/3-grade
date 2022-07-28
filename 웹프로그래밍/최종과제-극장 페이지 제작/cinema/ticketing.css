@@ -1,0 +1,465 @@
+ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{text-decoration: none; color: inherit;}
+
+#m_title{
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    padding: 110px 0px 50px 10px;
+    text-align: center;
+}
+#film_title{
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#film_info_t{
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 450px;
+    margin-bottom: 20px;
+}
+
+#film_time_t{
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 650px;
+    margin-bottom: 20px;
+}
+
+#좌석{
+    display: inline-block;
+    font-size: 30px;
+    transform: translate(850px, -300px);
+}
+
+#결제{
+    display: inline-block;
+    font-size: 30px;
+    transform: translate(900px, -20px);
+}
+#money_{
+    font-size: 25px;
+    text-align: center;
+    transform: translateY(30px);
+    margin-bottom: 300px;
+}
+
+#form_reset_btn{
+    transform: translate(1750px, -80px);
+    font-size: 17px;
+    width: 100px;
+    color: gray;
+    height: 40px;
+    background-color: inherit;
+    border-color:gray;
+    outline: none;
+    border-width: 1px;
+}
+
+#bg_c{
+    background-color: rgb(204, 204, 204);
+    color: rgb(204, 204, 204);
+    width: 1137px;
+    height: 60px;
+    transform: translate(345px ,80px);
+}
+
+#ticket_form{
+    width: 90%;
+    transform: translate(5%, -15%);
+    display: inline;
+}
+
+
+#ticket_form_set{
+    border-width: 1px;
+    border: 0px;
+}
+
+.film_list{
+    position: absolute;
+    margin-top: 15px;
+}
+
+
+.film_list > li > button{
+    width: 300px;
+    font-size: 25px;
+    padding: 10px;
+    background-color: inherit;
+    color: gray;
+    outline: none;
+    border: none;
+}
+
+.film_list > li > button:hover{
+    color: black;
+}
+
+.line1{
+    border: 1px solid black;
+}
+.line2{
+    border: 1px solid black;
+    width: 0.1px;
+    height: 380px;
+    transform: translateX(300px);
+}
+.line3{
+    border: 1px solid black;
+    width: 0.1px;
+    height: 380px;
+    transform: translate(1100px, -384px);
+}
+.line4{
+    border: 1px solid black;
+    transform: translateY(-384px);
+}
+
+.line5{
+    border: 1px solid black;
+    width: 50%;
+    transform: translate(450px,-274px);
+}
+
+.line6{
+    border: 1px solid black;
+    width: 50%;
+    transform: translate(450px,0px);
+}
+
+
+.film_info_1{
+    overflow: auto;
+    border: 1px solid black;
+    width: 800px;
+    height: 380px;
+    transform: translate(300px, -383px);
+    display: none;
+    position: absolute;
+}
+#info_img1{
+    transform: translate(20px, 20px);
+    box-shadow: 12px 10px 7px gray;
+}
+
+.film_info_1 > p{
+    display: inline-block;
+    transform: translate(270px, -200px);
+}
+
+.film_info_1 > span{
+    display: inline-block;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#p1_title{
+    transform: translate(200px, -220px);
+}
+#p1_context{
+    transform: translate(150px, 20px);
+    font-size: 25px;
+}
+
+.film_info_2{
+    overflow: auto;
+    border: 1px solid black;
+    width: 800px;
+    height: 380px;
+    transform: translate(300px, -383px);
+    display: none;
+    position: absolute;
+}
+#info_img2{
+    transform: translate(20px, 20px);
+    box-shadow: 12px 10px 7px gray;
+}
+
+.film_info_2 > p{
+    display: inline-block;
+    transform: translate(270px, -200px);
+}
+
+.film_info_2 > span{
+    display: inline-block;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#p2_title{
+    transform: translate(200px, -220px);
+}
+#p2_context{
+    transform: translate(150px, 20px);
+    font-size: 25px;
+}
+
+
+
+.film_info_3{
+    overflow: auto;
+    border: 1px solid black;
+    width: 800px;
+    height: 380px;
+    transform: translate(300px, -383px);
+    display: none;
+    position: absolute;
+}
+#info_img3{
+    transform: translate(20px, 20px);
+    box-shadow: 12px 10px 7px gray;
+}
+
+.film_info_3 > p{
+    display: inline-block;
+    transform: translate(270px, -200px);
+}
+
+.film_info_3 > span{
+    display: inline-block;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#p3_title{
+    transform: translate(200px, -220px);
+}
+#p3_context{
+    transform: translate(150px, 20px);
+    font-size: 25px;
+}
+
+
+
+.film_info_4{
+    overflow: auto;
+    border: 1px solid black;
+    width: 800px;
+    height: 380px;
+    transform: translate(300px, -383px);
+    display: none;
+    position: absolute;
+}
+#info_img4{
+    transform: translate(20px, 20px);
+    box-shadow: 12px 10px 7px gray;
+}
+
+.film_info_4 > p{
+    display: inline-block;
+    transform: translate(270px, -200px);
+}
+
+.film_info_4 > span{
+    display: inline-block;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#p4_title{
+    transform: translate(200px, -220px);
+}
+#p4_context{
+    transform: translate(150px, 20px);
+    font-size: 25px;
+}
+
+.film_info_5{
+    overflow: auto;
+    border: 1px solid black;
+    width: 800px;
+    height: 380px;
+    transform: translate(300px, -383px);
+    display: none;
+    position: absolute;
+}
+#info_img5{
+    transform: translate(20px, 20px);
+    box-shadow: 12px 10px 7px gray;
+}
+
+.film_info_5 > p{
+    display: inline-block;
+    transform: translate(270px, -200px);
+}
+
+.film_info_5 > span{
+    display: inline-block;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#p5_title{
+    transform: translate(200px, -220px);
+}
+#p5_context{
+    transform: translate(150px, 20px);
+    font-size: 25px;
+}
+
+.film_info_6{
+    overflow: auto;
+    border: 1px solid black;
+    width: 800px;
+    height: 380px;
+    transform: translate(300px, -383px);
+    display: none;
+    position: absolute;
+}
+#info_img6{
+    transform: translate(20px, 20px);
+    box-shadow: 12px 10px 7px gray;
+}
+
+.film_info_6 > p{
+    display: inline-block;
+    transform: translate(270px, -200px);
+}
+
+.film_info_6 > span{
+    display: inline-block;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#p6_title{
+    transform: translate(200px, -220px);
+}
+#p6_context{
+    transform: translate(150px, 20px);
+    font-size: 25px;
+}
+
+.film_info_7{
+    overflow: auto;
+    border: 1px solid black;
+    width: 800px;
+    height: 380px;
+    transform: translate(300px, -383px);
+    display: none;
+    position: absolute;
+    
+}
+#info_img7{
+    transform: translate(20px, 20px);
+    box-shadow: 12px 10px 7px gray;
+}
+
+.film_info_7 > p{
+    display: inline-block;
+    transform: translate(270px, -200px);
+}
+
+.film_info_7 > span{
+    display: inline-block;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#p7_title{
+    transform: translate(200px, -220px);
+}
+#p7_context{
+    transform: translate(150px, 20px);
+    font-size: 25px;
+}
+
+.time_table > ul > li > button{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    background-color: #fff;
+    border: 1px solid;
+    transform: translate(1250px, -700px);
+    display: none;
+}
+
+
+#f1_bt2{
+    transform: translate(1550px, -700px);
+}
+#f2_bt2{
+    transform: translate(1550px, -700px);
+}
+#f3_bt2{
+    transform: translate(1550px, -700px);
+}
+#f5_bt2{
+    transform: translate(1550px, -700px);
+}
+#f6_bt2{
+    transform: translate(1550px, -700px);
+}
+
+.table_time{
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    font-size: 25px;
+    transform: translate(450px, -200px);
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.table_time > td{
+    width: 10%;
+}
+
+.table_seat{
+    display: none;
+}
+
+#submit_bt{
+    width: 100px;
+    font-size: 20px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid;
+    color: gray;
+    transform: translate(1750px, -100px);
+    display: none;
+}
+
+#sub{
+    width: 100px;
+    font-size: 20px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid;
+    color: gray;
+    transform: translate(1750px, -100px);
+    display: none;
+}
+
+.buy{
+    display: none;
+}
+#another{
+    display: none;
+    position: absolute;
+    transform: translate(1500px, -50px);
+}
+#page
+{
+    position: absolute;
+    width: 100px;
+    font-size: 20px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid;
+    color: gray;
+    transform: translate(50px, 10px);
+}
