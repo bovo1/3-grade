@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>움직이는 글자</title>
+        <style>
+            p{
+                display : inline-block;
+                position : absolute;
+                color: white;
+                border-radius: 50em;
+                margin: 1px;
+                font-size: 200%;
+                font-weight: bold;
+                text-align: center;
+                transition: all ease 1s 0s
+            }
+            
+            @keyframes ani1{
+                from{
+                    left: 0%;
+                }
+                to{
+                    left: 50%;
+                    font-size: 1100%;
+                }
+
+            }
+
+            @keyframes ani2{
+                from{
+                    right: 0%;
+                }
+                to{
+                    right: 50%;
+                    font-size: 1100%;
+                }
+            }
+
+            @keyframes ani3{
+                from{
+                    right: 0%;
+                    top: 0%;
+                }
+                to{
+                    top: 50%;
+                    /*right: 0%;*/
+                    font-size: 1100%;
+                }
+            }
+
+            @keyframes ani4{
+                from{
+                    left: 0%;
+                    bottom: 0%;
+                }
+                to{
+                    bottom: 50%;
+                    font-size: 1100%;
+                }
+            }
+
+            #www {
+                background-color : black;
+                animation-name: ani1;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            #html5{
+                background-color : red;
+                right: 0%;
+                animation-name: ani3;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+
+            }
+            #java{
+                background-color:blue;
+                bottom: 0%;
+                animation-name: ani4;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+
+            }
+            #css{
+                background-color:green;
+                right: 0%; bottom: 0%;
+                animation-name: ani2;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            p:hover{
+                transform: rotate(180deg);
+            }
+        </style>
+    </head>
+    
+    <body>
+        <p id="www">WWW</p>
+        <p id="html5">HTML5</p>
+        <p id="java">JavaScript</p>
+        <p id="css">CSS3</p>
+    </body>
+</html>
