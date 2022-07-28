@@ -1,0 +1,75 @@
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table{border-collapse:collapse; border:3px solid black;}
+        td{border:1px solid gray; text-align:center; width:50px; height:40px;}
+
+    </style>
+</head>
+
+<body>
+    <h2>3-6-9 테이블</h2>
+    <table border="1" width="50%" id='tb'>
+        <?php
+            $a = 10;
+            $b = 100;
+            $t = 0;
+
+            for($i = 0; $i<$b; $i++)
+            {
+                echo "<tr>";
+                for($j = 0; $j<$a; $j++)
+                {
+                    #echo "<td id='tid'>{$t}</td>";
+                    #if($t % 3 != 0)
+                    #{
+                    #    echo "<script>document.getElementById('tid').style.background='cyan'</script>";
+                        
+                    #}
+                    /*
+                        if($t % 10 == 3 || $t % 10 == 6 || $t % 10 == 9)
+                        {
+                            echo "<td style='background-color:yellow; color:blue; font-weight:bold;>$t</td>";
+                        }
+                        if($t % 3 ==0)
+                        {
+                            echo "<td>$t</td>";
+                        }
+                    */
+                    echo "<td>{$t}</td>";
+                    $t++;
+                }
+                echo "</tr>";
+            }
+        ?>
+    </table>
+    <script>
+        var TB = document.getElementById("tb");
+        for(var i =0; i<1000; i++)
+        {
+            
+            for(var j =0; j<10; j++)
+            {
+                if(TB.rows[i].cells[j].innerText % 3 == 0)
+                {
+                    TB.rows[i].cells[j].style.background = 'cyan';
+                    TB.rows[i].cells[j].style.color = 'red';
+                    TB.rows[i].cells[j].style.fontWeight = 'bold';
+                }
+                else
+                {
+                    if(TB.rows[i].cells[j].innerText.includes('3') || TB.rows[i].cells[j].innerText.includes('6') || TB.rows[i].cells[j].innerText.includes('9'))
+                    {
+                        TB.rows[i].cells[j].style.background = 'yellow';
+                        TB.rows[i].cells[j].style.color = 'blue';
+                        TB.rows[i].cells[j].style.fontWeight = 'bold';
+                    } 
+                }
+            }
+        }
+        
+    </script>
+
+    
+</body>
+
