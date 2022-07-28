@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>단위 변환기</title>
+        <style>
+            #num{
+                width: 70px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h3>단위 변환기</h3>
+        <section>
+            <form name="f1" method="post" action="unit_cvt.php">
+                <input id="num" name="num" type="number" value=1>
+                <select name="unit">
+                    <option value="야드(yd)">야드(yd)</option>
+                    <option value="인치(in)">인치(in)</option>
+                    <option selected value="미터(m)">미터(m)</option>
+                    <option value="피트(ft)">피트(ft)</option>
+                </select>
+                <button type="submit">확인</button>
+            </section>
+            </form>
+    </body>
+</html>
