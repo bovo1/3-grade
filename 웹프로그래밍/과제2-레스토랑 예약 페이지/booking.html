@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <title>웹 프로그래밍 과제#2 &lt;레스토랑 예약&gt;</title>
+    <body>
+        <header>
+            <h2>레스토랑 예약하기</h2>
+        </header>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>예약자 정보</legend>
+                    <label>
+                    예약자 : <input type="text" value=""><br>
+                    </label>
+                    <label>
+                    휴대폰 : <input type="tel" placeholder="01*-000*-0000" pattern="[0]{1}[1]{1}[0-9]{1}-[0-9]{3,4}-[0-9]{4}"><br>
+                    </label>
+                    <label>
+                    예약인원 : <select name="np">
+                        <option value="1">2명</option>
+                        <option value="2">3명</option>
+                        <option value="3">4명</option>
+                        <option value="4">5명</option>
+                        <option value="5">6명</option>
+                        <option value="6">7명</option>
+                        <option value="7">8명</option>
+                    </select>
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+        <br>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>일자 선택 및 시간 선택</legend>
+                    <label>
+                        날짜 : <input type="date" value="2021-10-01"><br>
+                    </label>
+                    <label>
+                        시간 : <input type="time" value="00:00"><br>
+                    </label>
+                    <label>
+                        위치 : 본관<input type="radio" name="loc" value="1">
+                        
+                        별관<input type="radio" name="loc" value="2">
+                        <br>
+                    </label>
+                    <label>
+                        옵션 : <input type="checkbox" value="1"> 단독룸
+                        <input type="checkbox" value="2">아기의자
+                        <input type="checkbox" value="3">채식요리
+                        <br>
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+        <br>
+        <section>
+            <form>
+                <button type="submit" value="예약">예약</button>
+                <button type="reset" value="취소">취소</button>
+            </form>
+        </section>
+    </body>
+</html>
