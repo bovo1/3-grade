@@ -1,0 +1,45 @@
+body{
+    background-image: url("media/패턴.jpg");
+    background-repeat: repeat;
+}
+
+/*div는 사용하지 않았으며, list는 본문 phargraph가 아니라고 판단되어
+p 태그에만 적용했습니다.*/
+p:first-letter{ color:red; font-size:1.5em;}
+
+h1{color : #819FF7;
+    font-family: "휴먼둥근헤드라인", "돋움", "바탕", Serif;
+    font-style: italic;
+}
+
+h2{color: #FACC2E;
+    font-family: "휴먼둥근헤드라인", "돋움", "바탕", Serif;
+}
+
+img{
+    border: 10px groove #D8D8D8;
+    box-shadow: 10px 10px 5px #2E2E2E;
+}
+
+/*표를 볼때 배경의 패턴이 글을 읽는데 방해할것 같아 배경을 white로 바꿨습니다.
+원래 html5에서 border=1 로 하여 두꺼운 테두리로 되있던 것을
+CSS3에서 얇은 실선으로 바꿔주었습니다.
+*/
+table{
+    width: 55%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td{border: 1px solid black;}
+
+#C0{background-color: thistle;}
+#C1{background-color: aquamarine;}
+#C2{background-color: olivedrab;}
+#C3{background-color: azure;}
+#C4{background-color: sandybrown;}
+#C5{background-color: burlywood;}
+#C6{background-color: palegoldenrod;}
+
+thead, #CT{ background-color: yellow;}
