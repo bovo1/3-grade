@@ -1,0 +1,15 @@
+PCIe is a third generation I/O bus, used to interconnect peripheral devices, based in its processor bus. 
+It is a serial, point-to-point interconnect for communication between devices. 
+The point-to-point connection allows large scale and higher level transmit/receive frequencies, which leads to high speed data movements. 
+More specifically, PCIe Gen1 has a data rate 2.5 GB/s, Gen2 has a data rate 5 GB/s and Gen3 has a data rate up to 8 GB/s. 
+While connecting peripheral devices to the PCIe interface, a host processor manages the connected devices as a root complex, with the enumeration of the entire memory space. 
+In this situation, multiple processors could not be connected to PCIe interconnect since they would attempt to service the same address leading to collisions. 
+PCIe Non-Transparent Bridge (NTB) is a method for PCIe systems to handle multiple processors. 
+NTB is functionally similar to the transparent bridge except that there is a processor on each side of the bridge, and each processor has its own independent address space domain. 
+In the NTB environment, the PCIe bridge translates addresses that across from one memory address space to the other space through translation registers,  in the so-called memory window. 
+The address translation of one host to another host is described in Figure. 
+With this address translation, two processors connected to PCIe NTB can share independent address spaces, each one belonging to a processor, and transfer data through this independent address space.
+In addition to that, as noted in the PCIe specification, two processors can share some small data set through some special registers, i.e., eight or more 32bit registers, called ScratchPad registers. 
+After one host writes data to one ScratchPad register, another host can access and read directly from that register. 
+Also, one processor can cause an interrupt to the other processor through register called Doorbell register. 
+There are sixteen doorbell interrupts that can be set or cleared, as well as masked.
