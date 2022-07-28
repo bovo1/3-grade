@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>윤동주 시집</title>
+        <style>
+            p{
+                border-radius: 15px;
+                display : inline-block;
+                background-color: yellow;
+                text-align: center;
+                width: 200px;
+                height: 70px;
+                font-size: 1.2em;
+                margin-inline: 5px;
+                padding-top: 10px;
+            }
+            div{
+                font-size: 1.2em;
+                position: absolute;
+            }
+            span{
+                font-size: 1.2em;
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <p id = "서시" onclick="bt_cl('서시', 1)">서시<br>윤동주</p>
+            <p id = "쉽게" onclick="bt_cl('쉽게', 2)">쉽게 쓰여진 시<br>윤동주</p>
+            <p id = "별" onclick="bt_cl('별', 3)">별 헤는 밤<br>윤동주</p>
+
+
+            <div id="1" style="visibility: hidden;"><span style="font-size: 1.2em;">서시, 윤동주</span><br><br>
+                죽는 날까지 하늘을 우러러<br>
+                한 점 부끄럼이 없기를,<br>
+                잎새에 이는 바람에도<br>
+                나는 괴로워했다.<br>
+                별을 노래하는 마음으로<br>
+                모든 죽어가는 것을 사랑해야지.<br>
+                그리고 나한테 주어진 길을<br>
+                걸어가야겠다.</div><br>
+
+            <div id="2" style="visibility: hidden;"><span style="font-size: 1.2em;">쉽게 쓰여진 시, 윤동주</span><br><br>
+                인생은 살기 어렵다는데<br>
+                시가 이렇게 쉽게 씌어지는 것은<br>
+                부끄러운 일이다<br>
+                육첩방은 남의 나라<br>
+                창밖에 밤비가 속살거리는데,<br>
+                등불을 밝혀 어둠을 조금 내몰고<br>
+                시대처럼 올 아침을 기다리는 최후의 나.</div><br>
+
+            <div id="3" style="visibility: hidden;"><span style="font-size: 1.2em; ">별 헤는 밤, 윤동주</span><br><br>
+                계절로 지나가는 하늘에는<br>
+                가을로 가득 차 있습니다.<br>
+                나는 아무 걱정도 없이<br>
+                가을 속의 별들을 다 헤일 듯 합니다.<br>
+                가슴속에 하나 둘 새겨지는 별을<br>
+                이제 다 못 헤는 것은<br>
+                쉬이 아침이 오는 까닭이요,<br>
+                내일 밤이 남은 까닭이요,<br>
+                아직 나의 청춘이 다 하지 않은 까닭입니다.</div><br>
+
+        </section>
+        <section>
+            <script type="text/javascript">
+                var count = 0;
+                var poem_count = 0;
+                var poem1 = document.getElementById("서시");
+                var poem2 = document.getElementById("쉽게");
+                var poem3 = document.getElementById("별");
+
+                function bt_cl(x, y)
+                {
+                    if(count == 0)
+                    {
+                        document.getElementById(x).style.background="aqua";
+
+                        if(document.getElementById(y).style.visibility == "hidden")
+                        {
+                            document.getElementById(y).style.visibility = "visible";
+                            poem_count += 1;
+                        }
+                        if(poem_count >= 1)
+                        {
+                            document.getElementById(y).style.position = "static";
+                        }
+
+                        count = 1;
+                    }
+                    else if(count == 1)
+                    {
+                        document.getElementById(x).style.background="yellow";
+
+                        if(document.getElementById(y).style.visibility == "visible")
+                        {
+                            document.getElementById(y).style.visibility = "hidden";
+                            poem_count -= 1;
+                        }
+                        if(poem_count <= 2)
+                        {
+                            document.getElementById(y).style.position = "absolute";
+                        }
+                        count = 0;
+                    }
+
+
+                }
+            </script>
+        </section>
+    </body>
+</html>
