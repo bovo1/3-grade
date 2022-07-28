@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>비만도 판정</title>
+    </head>
+    <body>
+        <table border="1">
+            <script type="text/javascript">
+                var name = prompt("이름을 입력하세요...");
+                var height = prompt(name+"님의 키를 입력하세요...");
+                var weight = prompt(name+"님의 몸무게를 입력하세요...");
+
+                document.write("<tr><th>이름</th>");
+                document.write("<td>" + name + "</td></tr>");
+                document.write("<tr><th>키</th>");
+                document.write("<td>" + height + "</td></tr>");
+                document.write("<tr><th>몸무게</th>");
+                document.write("<td>"+ weight + "</td></tr>");
+                document.write("<tr><th>BMI</th>");
+                var bmi = eval("weight / (height * height) * 10000").toFixed(1);
+                document.write("<td>"+ bmi +"</td></tr>");
+                document.write("<tr><th>비만도</th>");
+                document.write("<td>"+ BMI(bmi).fontsize(6) +"</td></tr>");
+
+
+                function BMI(b)
+                {
+                    if (b<18.5){return "저체중".fontcolor("blue")}
+                    else if(18.5<=b && b<25){return "정상"}
+                    else if(25<=b && b<30){return "과체중".fontcolor("orange")}
+                    else if(30<=b){return "비만".fontcolor("red")}
+                    else{return "NULL"}
+                }
+            </script>
+        </table>
+    </body>
+</html>
